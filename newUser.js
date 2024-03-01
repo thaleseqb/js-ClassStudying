@@ -1,6 +1,6 @@
 // studying OOP in javascript without class sintax
 
-// constructor function
+// constructor function:
 function User(name, email) {
     this.name = name;
     this.email = email;
@@ -13,7 +13,7 @@ function User(name, email) {
 // const newUser = new User('Mr. java', 'j@j.com')
 // console.log(newUser.exhibitInfo())
 
-// constructor function
+// constructor function:
 function Admin(role) {
     // The call method is geting the properties definedin User
     // Now the context of User belongs to Admin too.
