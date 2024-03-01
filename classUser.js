@@ -7,16 +7,16 @@ export default class User {
         this.active = active;        
     };
 
-    createOrApprove() {
-        if (this.role == 'Admin') {
+    // createOrApprove() {
+    //     if (this.role == 'Admin') {
             
-        } 
-        else if (this.role == 'Professor') {
+    //     } 
+    //     else if (this.role == 'Professor') {
             
-        } else {
-            return `User ${this.name} has not access to this function`;
-        };
-    };
+    //     } else {
+    //         return `User ${this.name} has not access to this function`;
+    //     };
+    // };
     
     exhibitInfo() {
         return `the student's name and email are ${this.name}, ${this.email}`;
