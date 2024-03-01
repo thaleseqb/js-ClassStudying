@@ -1,7 +1,7 @@
 const user = {
-    name: 'hello there',
-    email: 'hi there',
-    bornDate: '',
+    name: 'Mario',
+    email: 'M@M.com',
+    birthDate: '',
     role: '',
     active: true,
     exhibitInfo: function() {
@@ -18,14 +18,29 @@ const user = {
 // we will get an undefined property, because the information that is desired
 // is lost from the original context that it was be declared
 
-const exhibit = function() {
-    console.log(this.name)
-}
+// const exhibit = function() {
+//     console.log(this.name)
+// }
 
 // without binding the constant variables declared it is not possible acess the context
 // related to the object 'user' declared in the begning of the document
 
-const exhibitName = exhibit.bind(user)
+// const exhibitName = exhibit.bind(user)
 
-exhibitName()
-exhibit()
+// ---exhibitName()
+// ---exhibit()
+
+const admin = {
+    name: 'Maria',
+    email: 'm@m.com',
+    role: 'admin',
+    createCourse(){
+        console.log('Course created')
+    }
+};
+
+Object.setPrototypeOf(admin, user);
+admin.createCourse()
+admin.exhibitInfo()
+
+
