@@ -6,17 +6,6 @@ export default class User {
         this.role = role || 'student';
         this.active = active;        
     };
-
-    // createOrApprove() {
-    //     if (this.role == 'Admin') {
-            
-    //     } 
-    //     else if (this.role == 'Professor') {
-            
-    //     } else {
-    //         return `User ${this.name} has not access to this function`;
-    //     };
-    // };
     
     exhibitInfo() {
         return `the student's name and email are ${this.name}, ${this.email}`;
@@ -25,8 +14,8 @@ export default class User {
 
 // the command new is used to invoke the cosntructor function
 // and the class object is returned
-const newUser = new User('thales', 't@t.com', '20')
+// const newUser = new User('thales', 't@t.com', '20')
 
-console.log(newUser.exhibitInfo())
+// console.log(newUser.exhibitInfo())
 // the command below shows if User is prototype of newUser
-console.log(User.prototype.isPrototypeOf(newUser))
+// console.log(User.prototype.isPrototypeOf(newUser))
