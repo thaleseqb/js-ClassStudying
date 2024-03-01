@@ -1,5 +1,5 @@
-class User {
-    constructor(name, email,birth, role, active = true) {
+export default class User {
+    constructor(name, email, birth, role, active=true) {
         this.name = name;
         this.email = email;
         this.birth = birth;
@@ -7,11 +7,20 @@ class User {
         this.active = active;        
     };
 
+    createOrApprove() {
+        if (this.role == 'Admin') {
+            
+        } 
+        else if (this.role == 'Professor') {
+            
+        } else {
+            return `User ${this.name} has not access to this function`;
+        };
+    };
+    
     exhibitInfo() {
         return `the student's name and email are ${this.name}, ${this.email}`;
-    }
-
-
+    };
 };
 
 // the command new is used to invoke the cosntructor function
