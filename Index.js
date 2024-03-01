@@ -1,8 +1,13 @@
+import User from './classUser.js'
+import Admin from './Admin.js'
+import Docent from './Docent.js'
+
 // -- REFERENT TO THE CLASSUSER.JS DOCUMENT 
 // ----------------------------------
 // the command new is used to invoke the cosntructor function
 // and the class object is returned
 const newUser = new User('thales', 't@t.com', '20')
+console.log(newUser.exhibitInfo())
 
 // console.log(newUser.exhibitInfo())
 // the command below shows if User is prototype of newUser
