@@ -6,8 +6,9 @@ import Docent from './Docent.js'
 // ----------------------------------
 // the command new is used to invoke the cosntructor function
 // and the class object is returned
-const newUser = new User('thales', 't@t.com', '20')
+const newUser = new User('thales', 't@t.com', '20-04-2001')
 console.log(newUser.exhibitInfo())
+// console.log(newUser.#constructUser())
 
 // console.log(newUser.exhibitInfo())
 // the command below shows if User is prototype of newUser
@@ -17,8 +18,8 @@ console.log(newUser.exhibitInfo())
 
 // -- REFERENT TO THE ADMIN.JS DOCUMENT 
 // ----------------------------------
-const newAdmin = new Admin('maria', 'm@m.com', '12')
-
+const newAdmin = new Admin('maria', 'm@m.com', '12-08-2010')
+console.log(newAdmin.name)
 // console.log(newAdmin)
 // console.log(newAdmin.exhibitInfo())
 
